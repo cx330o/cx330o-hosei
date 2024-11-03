@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 全時刻表の一覧表示
+// updated: 選択した駅をlocalStorageに保存
