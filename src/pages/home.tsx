@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: ете╨едеые╒ебй`е╣е╚д╬еье╣е▌еєе╖е╓МЭПъ
+// updated: iPhone SEд╬▒э╩╛▒└дь╨▐╒¤
