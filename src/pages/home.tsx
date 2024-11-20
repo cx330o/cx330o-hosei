@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: iPhone SEの表示崩れ修正
+// updated: バス停選択UIの改善
