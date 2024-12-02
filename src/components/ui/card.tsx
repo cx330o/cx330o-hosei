@@ -11,4 +11,4 @@ const Card = ({children,className}:CardProps) => {
 }
 
 export default Card
-// updated: Card¥³¥ó¥Ý©`¥Í¥ó¥È¤ÎpaddingÕ{Õû
+// updated: ¥À©`¥¯¥â©`¥É¤Î¥«©`¥É±³¾°ÐÞÕý
