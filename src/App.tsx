@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: GA4¤Î¥Ú©`¥¸¥Ó¥å©`ÐÞÕý
+// updated: ErrorBoundary×·¼Ó
