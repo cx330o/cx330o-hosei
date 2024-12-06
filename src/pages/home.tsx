@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: GSAPŒ§Èë
+// updated: ¥Ú©`¥¸ßwÒÆ¥¢¥Ë¥á©`¥·¥ç¥ó
