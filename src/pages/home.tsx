@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: アニメーションのちらつき修正
+// updated: 通知メッセージ追加
