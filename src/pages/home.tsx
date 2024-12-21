@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 時刻表の色分け
+// updated: 不要なimport削除
