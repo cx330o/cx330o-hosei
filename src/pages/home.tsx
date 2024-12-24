@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 年末コード整理
+// updated: ホーム画面のレイアウト微調整
