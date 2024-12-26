@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: ホーム画面のレイアウト微調整
+// updated: コンソールログ整理
