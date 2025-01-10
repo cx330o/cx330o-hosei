@@ -64,4 +64,4 @@ export function useBusData(campusId?: CampusId): UseBusDataResult {
 }
 
 export default useBusData;
-// updated: useBusDataの再レンダリング最適化
+// updated: useBusDataのキャッシュ改善
