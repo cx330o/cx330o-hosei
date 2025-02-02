@@ -17,4 +17,4 @@ export {
 export { findNextBuses, getSpecialDateConfig } from "./busUtils"
 
 export { findNextTrains } from "./trainUtils"
-// updated: TypeScript¤ÎÐÍ¥¨¥é©`ÐÞÕý
+// updated: findNextTrainsŒg×°
