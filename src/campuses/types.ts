@@ -70,7 +70,7 @@ export interface CampusConfig {
   subtitle: string;
   /** Primary transport mode */
   transportMode: TransportMode;
-  /** Whether direction swap (Â§ßÂ≠¶Ë°å„Åç/ÈßÖË°å„Åç) is supported */
+  /** Whether direction swap (Â§ßÂ≠¶Ë°å„Åç/ÈßÖË°å„Å? is supported */
   hasDirectionSwap: boolean;
   /** Station configs */
   stations: StationConfig[];
@@ -83,3 +83,4 @@ export interface CampusConfig {
   /** Google Analytics tracking ID */
   gaTrackingId: string;
 }
+// updated: StationConfig•§•Û•ø©`•’•ß©`•π
