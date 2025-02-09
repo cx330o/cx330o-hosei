@@ -22,3 +22,4 @@ export function useCampus(): CampusConfig {
   }
   return ctx;
 }
+// updated: useCampus¥Õ¥Ã¥¯
