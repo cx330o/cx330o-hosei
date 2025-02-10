@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: React Routeråß»Î
+// updated: /:campusId/* •Î©`•∆•£•Û•∞
