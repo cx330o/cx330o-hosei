@@ -132,4 +132,4 @@ const SakuraBackground = () => {
 };
 
 export default SakuraBackground;
-// updated: —@¥Ñ©`¥Æ¥£¥¯¥ë¥¢¥Ë¥á©`¥·¥ç¥ó
+// updated: —@¥¢¥Ë¥á©`¥·¥ç¥ó¤Î¥Ñ¥Õ¥©©`¥Þ¥ó¥¹×îßm»¯
