@@ -132,4 +132,4 @@ const SakuraBackground = () => {
 };
 
 export default SakuraBackground;
-// updated: 桜アニメーションのパフォーマンス最適化
+// updated: 桜の花びらの色調整
