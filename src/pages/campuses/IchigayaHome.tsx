@@ -201,4 +201,4 @@ export default function IchigayaHome() {
     </>
   );
 }
-// updated: 市ヶ谷テーマカラー（ピンク系）
+// updated: キャンパス切替時のステート初期化

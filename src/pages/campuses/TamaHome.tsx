@@ -80,7 +80,7 @@ export default function TamaHome() {
         now < new Date(config.notificationEnd) &&
         config.affectedStations.includes(state.station as SpecialDateConfig["affectedStations"][number])
       ) {
-        const dateLabel = config.date.replace(/^(\d{4})-(\d{1,2})-(\d{1,2})$/, "$1年$2月$3日");
+        const dateLabel = config.date.replace(/^(\d{4})-(\d{1,2})-(\d{1,2})$/, "$1�?2�?3�?);
         toast(`${dateLabel}京王バスは特別ダイヤです(${config.description})`);
       }
     }
@@ -194,7 +194,7 @@ export default function TamaHome() {
           <Card>
             <div className="grid grid-cols-5 mx-auto mt-5 px-8 font-semibold text-xl text-center" ref={directionContainer}>
               <p className="inline-block col-span-2 h-8 text-center js-departure" ref={departureRef}>{departure}</p>
-              <p className="col-span-1 h-4">⇒</p>
+              <p className="col-span-1 h-4">�?/p>
               <p className="inline-block col-span-2 h-8 text-center js-arrival" ref={destinationRef}>{destination}</p>
             </div>
             {/* Countdown */}
@@ -211,7 +211,7 @@ export default function TamaHome() {
               className="flex relative overflow-hidden bg-gradient-to-r from-green-700/40 to-emerald-600/40 dark:from-green-800/40 dark:to-emerald-700/30 backdrop-blur-sm shadow-lg shadow-green-900/15 border border-green-400/30 mx-auto mt-3 rounded-xl w-1/2 min-h-[44px] text-white text-center transition-all hover:from-green-600/50 hover:to-emerald-500/50 before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,200,0.1),transparent_70%)] before:pointer-events-none"
               onClick={handleDirectionButtonClicked}
               ref={arrowsContainer}
-              aria-label="行き先を切り替える"
+              aria-label="行き先を切り替え�?
             >
               <ArrowsCounterClockwiseIcon size={28} ref={arrowsRef} className="mt-[8px] ml-3 rotate-x-180" />
               <span className="mx-auto my-2 font-semibold text-lg text-center">{t("home.swap")}</span>
@@ -220,7 +220,7 @@ export default function TamaHome() {
 
           <Card>
             <div className="relative font-semibold text-lg text-center">
-              <img src={campus.mapImagePath} alt="地図のイラスト" width={300} className="mx-auto h-48 object-cover" height={300} />
+              <img src={campus.mapImagePath} alt="地図のイラス�? width={300} className="mx-auto h-48 object-cover" height={300} />
               {campus.buildings.map((b, i) => {
                 const positions = ["top-0 left-0", "top-0 right-0", "bottom-0 left-0", "right-0 bottom-0"];
                 return (
@@ -234,7 +234,7 @@ export default function TamaHome() {
           </Card>
 
           <Card>
-            <nav aria-label="駅選択">
+            <nav aria-label="駅選�?>
               <div className={`gap-3 grid grid-cols-${campus.stations.length} font-semibold text-lg text-center`}>
                 {campus.stations.map((s) => (
                   <StationButton
@@ -281,3 +281,4 @@ export default function TamaHome() {
     </>
   );
 }
+// updated: �����ѥ�����r�Υ��Ʃ`�ȳ��ڻ�
