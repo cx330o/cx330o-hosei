@@ -11,4 +11,4 @@ const Card = ({children,className}:CardProps) => {
 }
 
 export default Card
-// updated: Cardコンポーネントのborder修正
+// updated: 全コンポーネントでcn()を使用
