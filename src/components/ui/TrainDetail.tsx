@@ -48,4 +48,4 @@ const TrainDetail = (props: Props) => {
 }
 
 export default TrainDetail
-// updated: 快速/各停の区別
+// updated: 快速電車のハイライト
