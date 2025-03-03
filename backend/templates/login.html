@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <!-- Hero with Hosei branding -->
+    <div class="text-center mb-10 mt-4">
+        <div class="w-20 h-20 bg-hosei rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-orange-500/30">
+            <span class="text-white font-extrabold text-3xl">H</span>
+        </div>
+        <h1 class="text-3xl font-extrabold mb-2">
+            <span class="hosei-orange">Hosei</span> <span class="text-gray-700 dark:text-gray-200">University SNS</span>
+        </h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('select_role') }}</p>
+        <p class="text-xs text-gray-400 mt-1">法政大学 · Hosei University · 호세이대학 · 法政大学</p>
+    </div>
+
+    <!-- Role cards -->
+    <div class="space-y-3 mb-10">
+        <a href="{{ url_for('login_role', role='student') }}"
+           class="block bg-white dark:bg-zinc-800/80 rounded-2xl p-5 shadow-sm hover:shadow-lg transition-all border border-gray-100 dark:border-zinc-700/50 group hover:-translate-y-0.5">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center text-white text-2xl flex-shrink-0 group-hover:scale-110 transition-transform shadow-md shadow-orange-500/20">🎓</div>
+                <div class="flex-1">
+                    <h2 class="font-bold text-lg">{{ t('student_login') }}</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('student_desc') }}</p>
+                </div>
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+        </a>
+        <a href="{{ url_for('login_role', role='teacher') }}"
+           class="block bg-white dark:bg-zinc-800/80 rounded-2xl p-5 shadow-sm hover:shadow-lg transition-all border border-gray-100 dark:border-zinc-700/50 group hover:-translate-y-0.5">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-2xl flex items-center justify-center text-white text-2xl flex-shrink-0 group-hover:scale-110 transition-transform shadow-md shadow-emerald-500/20">👨‍🏫</div>
+                <div class="flex-1">
+                    <h2 class="font-bold text-lg">{{ t('teacher_login') }}</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('teacher_desc') }}</p>
+                </div>
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-emerald-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+        </a>
+        <a href="{{ url_for('login_role', role='developer') }}"
+           class="block bg-white dark:bg-zinc-800/80 rounded-2xl p-5 shadow-sm hover:shadow-lg transition-all border border-gray-100 dark:border-zinc-700/50 group hover:-translate-y-0.5">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 bg-gradient-to-br from-violet-400 to-violet-600 rounded-2xl flex items-center justify-center text-white text-2xl flex-shrink-0 group-hover:scale-110 transition-transform shadow-md shadow-violet-500/20">💻</div>
+                <div class="flex-1">
+                    <h2 class="font-bold text-lg">{{ t('developer_login') }}</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('developer_desc') }}</p>
+                </div>
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-violet-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </div>
+        </a>
+    </div>
+
+    <!-- Campus Maps Section -->
+    <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4 text-center text-gray-600 dark:text-gray-300">🏫 Campus Map</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <!-- Ichigaya -->
+            <div class="bg-white dark:bg-zinc-800/80 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-zinc-700/50">
+                <div class="relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.7358!3d35.6936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c4c0b0e8b0d%3A0x5c0e8b0e8b0e8b0e!2z5rOV5pS_5aSn5a2m5biC44O25LqV44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1" 
+                            width="100%" height="140" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale hover:grayscale-0 transition-all duration-500"></iframe>
+                </div>
+                <div class="p-3 text-center">
+                    <p class="font-bold text-sm hosei-orange">市ヶ谷キャンパス</p>
+                    <p class="text-[11px] text-gray-400">Ichigaya Campus</p>
+                    <p class="text-[10px] text-gray-400 mt-1">法・文・経済・社会・経営・国際文化・人間環境・キャリアデザイン・GIS</p>
+                </div>
+            </div>
+            <!-- Tama -->
+            <div class="bg-white dark:bg-zinc-800/80 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-zinc-700/50">
+                <div class="relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.5!2d139.3358!3d35.6136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019199e8b0e8b0d%3A0x5c0e8b0e8b0e8b0e!2z5rOV5pS_5aSn5a2m5aSa5pGp44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1"
+                            width="100%" height="140" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale hover:grayscale-0 transition-all duration-500"></iframe>
+                </div>
+                <div class="p-3 text-center">
+                    <p class="font-bold text-sm hosei-orange">多摩キャンパス</p>
+                    <p class="text-[11px] text-gray-400">Tama Campus</p>
+                    <p class="text-[10px] text-gray-400 mt-1">現代福祉・スポーツ健康</p>
+                </div>
+            </div>
+            <!-- Koganei -->
+            <div class="bg-white dark:bg-zinc-800/80 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-zinc-700/50">
+                <div class="relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.5!2d139.5058!3d35.6536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e8b0e8b0e8b0%3A0x5c0e8b0e8b0e8b0e!2z5rOV5pS_5aSn5a2m5bCP6YeR5LqV44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1"
+                            width="100%" height="140" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale hover:grayscale-0 transition-all duration-500"></iframe>
+                </div>
+                <div class="p-3 text-center">
+                    <p class="font-bold text-sm hosei-orange">小金井キャンパス</p>
+                    <p class="text-[11px] text-gray-400">Koganei Campus</p>
+                    <p class="text-[10px] text-gray-400 mt-1">情報科学・理工・生命科学</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-xs text-gray-400 dark:text-gray-500 pb-8">
+        <p>© 2025 Hosei University SNS Project</p>
+        <p class="mt-1">法政大学生による法政大学生のためのSNS</p>
+    </div>
+</div>
+{% endblock %}
