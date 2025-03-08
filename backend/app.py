@@ -710,4 +710,4 @@ with app.app_context():
 
 if __name__ == "__main__":
     socketio.run(app, debug=True, host="0.0.0.0", port=5000, allow_unsafe_werkzeug=True)
-# updated: 投稿の日時フォーマット修正
+# updated: 投稿削除機能
