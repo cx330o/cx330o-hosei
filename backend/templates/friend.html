@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-2xl font-bold mb-6">{{ t('friend_list') }}</h1>
+
+{% if friends|length == 0 %}
+<div class="text-center py-16 text-gray-400">
+    <p class="text-4xl mb-3">👥</p>
+    <p>{{ t('no_friends') }}</p>
+</div>
+{% else %}
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+    {% for friend in friends %}
+    <a href="{{ url_for('user', user_id=friend.friend_id) }}"
+       class="bg-white dark:bg-zinc-800/80 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-zinc-700/50">
+        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-lg font-bold">
+            {{ friend.username[0]|upper }}
+        </div>
+        <p class="font-medium text-sm truncate">{{ friend.username }}</p>
+        {% if friend.department %}
+        <p class="text-xs text-gray-400 mt-1 truncate">{{ friend.department }}</p>
+        {% endif %}
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}
