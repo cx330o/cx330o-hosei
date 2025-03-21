@@ -200,4 +200,4 @@ def t(key, lang="ja"):
     """Get translation for key in given language, fallback to Japanese."""
     entry = TRANSLATIONS.get(key, {})
     return entry.get(lang, entry.get("ja", key))
-# updated: 認証?投稿の翻訳キー
+# updated: 中国語?韓国語翻訳追加
