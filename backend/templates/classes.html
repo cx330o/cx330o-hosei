@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-2xl font-bold mb-6">{{ t('class_list') }}</h1>
+
+<!-- Search form -->
+<div class="bg-white dark:bg-zinc-800/80 rounded-2xl p-5 shadow-sm border border-gray-100 dark:border-zinc-700/50 mb-6">
+    <form method="get" action="{{ url_for('classes') }}" class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <input type="text" name="name" value="{{ request.args.get('name','') }}" placeholder="{{ t('class_name') }}"
+               class="px-3 py-2 rounded-xl border border-gray-200 dark:border-zinc-600 bg-gray-50 dark:bg-zinc-700 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+        <input type="text" name="teacher" value="{{ request.args.get('teacher','') }}" placeholder="{{ t('teacher') }}"
+               class="px-3 py-2 rounded-xl border border-gray-200 dark:border-zinc-600 bg-gray-50 dark:bg-zinc-700 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+        <input type="text" name="code" value="{{ request.args.get('code','') }}" placeholder="{{ t('class_code') }}"
+               class="px-3 py-2 rounded-xl border border-gray-200 dark:border-zinc-600 bg-gray-50 dark:bg-zinc-700 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+        <input type="hidden" name="season" value="{{ request.args.get('season','') }}">
+        <input type="hidden" name="time" value="{{ request.args.get('time','') }}">
+        <input type="hidden" name="day" value="{{ request.args.get('day','') }}">
+        <input type="hidden" name="department" value="{{ request.args.get('department','') }}">
+        <button type="submit"
+                class="bg-blue-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition-colors">
+            {{ t('search') }}
+        </button>
+    </form>
+</div>
+
+{% if classes|length == 0 %}
+<div class="text-center py-12 text-gray-400">
+    <p class="text-4xl mb-3">📚</p>
+    <p>{{ t('search_class') }}</p>
+</div>
+{% else %}
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+    {% for c in classes %}
+    <a href="{{ url_for('class_detail', class_id=c.id) }}"
+       class="bg-white dark:bg-zinc-800/80 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-zinc-700/50">
+        <p class="text-xs text-gray-400 mb-1">{{ c.department }} · {{ c.code }}</p>
+        <h2 class="font-semibold text-sm mb-2 line-clamp-2">{{ c.name }}</h2>
+        <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 px-2 py-0.5 rounded-md">{{ c.teacher }}</span>
+            {% if c.time > 0 %}
+            <span class="text-xs bg-gray-100 dark:bg-zinc-700 px-2 py-0.5 rounded-md">{{ c.day }}{{ c.time }}{{ t('period') }}</span>
+            {% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="mt-6">
+    <a href="{{ url_for('schedule') }}" class="text-blue-600 hover:underline text-sm">← {{ t('back_to_schedule') }}</a>
+</div>
+{% endblock %}
