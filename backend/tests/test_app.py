@@ -13,8 +13,8 @@ def client():
         db.drop_all()
         db.create_all()
         pw = generate_password_hash("test123", method="pbkdf2:sha256")
-        s = User(username="student1", email="s@test.com", password=pw, role="student", department="æƒ…å ±ç§‘å­¦éƒ¨")
-        t = User(username="teacher1", email="t@test.com", password=pw, role="teacher", department="æ³•å­¦éƒ¨")
+        s = User(username="student1", email="s@test.com", password=pw, role="student", department="æƒ…å ±ç§‘å­¦éƒ?)
+        t = User(username="teacher1", email="t@test.com", password=pw, role="teacher", department="æ³•å­¦éƒ?)
         a = User(username="admin", email="a@test.com", password=pw, role="developer")
         db.session.add_all([s, t, a])
         db.session.commit()
@@ -59,7 +59,7 @@ class TestAuth:
 
     def test_signup(self, client):
         r = client.post("/signup/student", data={
-            "username": "newuser", "email": "new@test.com", "password": "pass123", "department": "æ–‡å­¦éƒ¨"
+            "username": "newuser", "email": "new@test.com", "password": "pass123", "department": "æ–‡å­¦éƒ?
         }, follow_redirects=True)
         assert r.status_code == 200
         assert User.query.filter_by(username="newuser").first() is not None
@@ -232,3 +232,4 @@ class TestMisc:
         login(client, "student1", "student")
         r = client.post("/api/upload")
         assert r.status_code == 400
+# updated: ÕJÔ^¥Õ¥í©`¤Î¥Æ¥¹¥È
