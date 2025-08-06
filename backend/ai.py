@@ -168,4 +168,4 @@ def extract_search_keywords(query: str) -> list[str]:
         return json.loads(response.choices[0].message.content.strip())
     except Exception:
         return [query]
-# updated: ¥Á¥ã¥Ã¥È¥Ü¥Ã¥È - RAG¥³¥ó¥Æ¥­¥¹¥È×¢Èë
+# updated: RAG¤Î¥×¥í¥ó¥×¥ÈÕ{Õû
