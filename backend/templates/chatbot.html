@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        🤖 {{ t('chatbot_title') }}
+    </h1>
+    <p class="text-gray-500 dark:text-gray-400 mb-6">{{ t('chatbot_desc') }}</p>
+
+    <!-- Chat Messages -->
+    <div id="chat-messages" class="space-y-4 mb-4 max-h-[60vh] overflow-y-auto p-4 bg-gray-50 dark:bg-zinc-900 rounded-lg">
+        <div class="flex gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm">AI</div>
+            <div class="bg-white dark:bg-zinc-800 rounded-lg p-3 max-w-[80%] shadow-sm">
+                <p>{{ t('chatbot_greeting') }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input -->
+    <form id="chat-form" class="flex gap-2">
+        <input
+            type="text"
+            id="chat-input"
+            placeholder="{{ t('chatbot_placeholder') }}"
+            class="flex-1 border dark:border-zinc-700 rounded-lg px-4 py-2 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            autocomplete="off"
+        />
+        <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors"
+        >
+            {{ t('send_dm') }}
+        </button>
+    </form>
+</div>
+
+<script>
+const chatMessages = document.getElementById('chat-messages');
+const chatForm = document.getElementById('chat-form');
+const chatInput = document.getElementById('chat-input');
+
+function addMessage(content, isUser) {
+    const wrapper = document.createElement('div');
+    wrapper.className = `flex gap-3 ${isUser ? 'justify-end' : ''}`;
+
+    const avatar = document.createElement('div');
+    avatar.className = `w-8 h-8 rounded-full flex items-center justify-center text-white text-sm ${isUser ? 'bg-green-500 order-2' : 'bg-blue-500'}`;
+    avatar.textContent = isUser ? '👤' : 'AI';
+
+    const bubble = document.createElement('div');
+    bubble.className = `rounded-lg p-3 max-w-[80%] shadow-sm ${isUser ? 'bg-blue-600 text-white' : 'bg-white dark:bg-zinc-800'}`;
+    bubble.textContent = content;
+
+    wrapper.appendChild(avatar);
+    wrapper.appendChild(bubble);
+    chatMessages.appendChild(wrapper);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function addLoading() {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'flex gap-3';
+    wrapper.id = 'loading-msg';
+
+    const avatar = document.createElement('div');
+    avatar.className = 'w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm';
+    avatar.textContent = 'AI';
+
+    const bubble = document.createElement('div');
+    bubble.className = 'bg-white dark:bg-zinc-800 rounded-lg p-3 shadow-sm';
+    bubble.innerHTML = '<span class="animate-pulse">考え中...</span>';
+
+    wrapper.appendChild(avatar);
+    wrapper.appendChild(bubble);
+    chatMessages.appendChild(wrapper);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+chatForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const question = chatInput.value.trim();
+    if (!question) return;
+
+    addMessage(question, true);
+    chatInput.value = '';
+    addLoading();
+
+    try {
+        const res = await fetch('/api/ai/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question }),
+        });
+        const data = await res.json();
+        document.getElementById('loading-msg')?.remove();
+        addMessage(data.answer || 'エラーが発生しました', false);
+    } catch (err) {
+        document.getElementById('loading-msg')?.remove();
+        addMessage('通信エラーが発生しました', false);
+    }
+});
+</script>
+{% endblock %}
