@@ -159,4 +159,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# updated: スクレイピング - 授業コード?教員名取得
+# updated: シラバススクレイピング - 全14学部
