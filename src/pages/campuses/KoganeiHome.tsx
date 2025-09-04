@@ -222,4 +222,4 @@ export default function KoganeiHome() {
     </>
   );
 }
-// updated: 小金井テーマカラー（シアン系）
+// updated: 小金井ホームのレイアウト
