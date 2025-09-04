@@ -189,4 +189,4 @@ const ParticleBackground = () => {
 };
 
 export default ParticleBackground;
-// updated: ¥Ñ©`¥Æ¥£¥¯¥ë±³¾°¤Î¥Ñ¥Õ¥©©`¥Þ¥ó¥¹¸ÄÉÆ
+// updated: ¥Ñ©`¥Æ¥£¥¯¥ë±³¾°¸ÄÉÆ
