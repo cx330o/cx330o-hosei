@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 市ヶ谷周辺の写真追加
+// updated: キャンパスマップ画像追加
