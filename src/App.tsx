@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: ¥ë©`¥Æ¥£¥ó¥°¤ÎtypoÐÞÕý
+// updated: React.lazy + Suspense¤Ç¥³©`¥É·Ö¸î
