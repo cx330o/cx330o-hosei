@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: React.lazy + Suspense¤Ç¥³©`¥É·Ö¸î
+// updated: LazyFallback¥í©`¥Ç¥£¥ó¥°»­Ãæ
