@@ -1,2 +1,2 @@
 import '@testing-library/jest-dom';
-// updated: useBusDataフックのテスト
+// updated: useClockフックのテスト
