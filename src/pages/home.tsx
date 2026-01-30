@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 年末コード整理
+// updated: strict modeの残りの型エラー修正
