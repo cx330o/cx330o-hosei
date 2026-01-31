@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: App.tsxのルーティング整理
+// updated: 学期末コード整理

@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: strict modeの残りの型エラー修正
+// updated: 学期末コード整理
