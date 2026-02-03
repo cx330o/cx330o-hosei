@@ -201,4 +201,4 @@ export default function IchigayaHome() {
     </>
   );
 }
-// updated: »­Ïñ¤ÎßWÑÓÕi¤ßŞz¤ß
+// updated: Tailwind 4¤Î¥¯¥é¥¹Ãû‰ä¸üŒê
