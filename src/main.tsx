@@ -8,4 +8,4 @@ createRoot(document.getElementById('root')!).render(
       <App />
   </StrictMode>,
 )
-// updated: React 19¤ÎÆÆ‰²µÄ‰ä¸üŒê
+// updated: ¥¢¥Ã¥×¥°¥ì©`¥Éáá¤Î¥Ó¥ë¥É¥¨¥é©`ĞŞÕı
