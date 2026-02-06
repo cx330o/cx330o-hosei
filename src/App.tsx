@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: ¥¢¥Ã¥×¥°¥ì©`¥Éáá¤Î¥Ó¥ë¥É¥¨¥é©`ĞŞÕı
+// updated: React Router 7¤ÎÆÆ‰²µÄ‰ä¸üŒê
