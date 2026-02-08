@@ -140,4 +140,4 @@ export const stationSchema = StationIdSchema;
 export const stateSchema = UserStateSchema;
 export const ekitanSchema = EkitanDataSchema;
 export const BusSchema = BusWithDateSchema;
-// updated: •’•©©`•‡»Î¡¶§ŒZod•–•Í•«©`•∑•Á•Û
+// updated: Zod•π•≠©`•ﬁ§Œ··∑Ωª•ìQ•®•§•Í•¢•π
