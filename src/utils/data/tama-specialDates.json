@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2025-07-21",
+    "affectedStations": ["nishihachioji", "mejirodai"],
+    "rule": "holiday_local_plus_weekday_express",
+    "description": "祝日の各停+平日の急行",
+    "notificationStart": "2025-07-20T21:00:00",
+    "notificationEnd": "2025-07-21T21:00:00"
+  }
+]
