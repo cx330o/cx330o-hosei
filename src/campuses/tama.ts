@@ -62,4 +62,4 @@ const tamaConfig: CampusConfig = {
 };
 
 export default tamaConfig;
-// updated: 3キャンパスのテーマ設定
+// updated: キャンパス建物設定（徒歩時間）

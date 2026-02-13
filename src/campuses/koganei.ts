@@ -55,4 +55,4 @@ const koganeiConfig: CampusConfig = {
 };
 
 export default koganeiConfig;
-// updated: 小金井の駅データ
+// updated: キャンパス建物設定（徒歩時間）

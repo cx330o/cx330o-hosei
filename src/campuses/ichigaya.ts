@@ -62,4 +62,4 @@ const ichigayaConfig: CampusConfig = {
 };
 
 export default ichigayaConfig;
-// updated: 3キャンパスのテーマ設定
+// updated: キャンパス建物設定（徒歩時間）
