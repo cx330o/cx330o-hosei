@@ -55,4 +55,4 @@ const koganeiConfig: CampusConfig = {
 };
 
 export default koganeiConfig;
-// updated: キャンパス建物設定（徒歩時間）
+// updated: 3キャンパスのテーマ設定完成
