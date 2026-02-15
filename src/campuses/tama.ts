@@ -62,4 +62,4 @@ const tamaConfig: CampusConfig = {
 };
 
 export default tamaConfig;
-// updated: 3キャンパスのテーマ設定完成
+// updated: テーマのグラデーション微調整
