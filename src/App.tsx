@@ -89,4 +89,4 @@ const App = () => {
 };
 
 export default App;
-// updated: GA4еде┘еєе╚е╚еще├енеєе░
+// updated: Lazy loading╚ле┌й`е╕МЭПъ
