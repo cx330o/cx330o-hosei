@@ -86,4 +86,4 @@ export default defineConfig({
   },
 
 })
-// updated: Vite 6¤ÎÔO¶¨‰ä¸üŒê
+// updated: vite-plugin-pwaÔO¶¨
