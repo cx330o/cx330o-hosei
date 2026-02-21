@@ -86,4 +86,4 @@ export default defineConfig({
   },
 
 })
-// updated: 画像WebP変換?最適化
+// updated: バンドルサイズの最適化
