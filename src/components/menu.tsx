@@ -55,4 +55,4 @@ const Menu = ({ locale, onLocaleChange, labels }: MenuProps) => {
 }
 
 export default Menu
-// updated: ¥À©`¥¯¥â©`¥ÉÇÐÌæ¥Ü¥¿¥ó
+// updated: ¥â¥Ð¥¤¥ë¤Î¥É¥í¥ï©`¥á¥Ë¥å©`ÐÞÕý
