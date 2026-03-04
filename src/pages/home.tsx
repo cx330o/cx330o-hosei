@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: 学期末コード整理
+// updated: lint警告の修正
