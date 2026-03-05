@@ -83,4 +83,4 @@ export interface CampusConfig {
   /** Google Analytics tracking ID */
   gaTrackingId: string;
 }
-// updated: CampusConfig - gaTrackingId×·¼Ó
+// updated: ¥³©`¥ÉÄÚ¥³¥á¥ó¥È×·¼Ó
