@@ -231,4 +231,4 @@ export default function Home() {
     </>
   );
 }
-// updated: lint警告の修正
+// updated: 不要コード削除
