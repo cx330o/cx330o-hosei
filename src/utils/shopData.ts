@@ -478,4 +478,4 @@ export const shopDataByCampus: Record<
 
 /** All shop data indexed by shop ID (Ichigaya 鈥?backward compatibility) */
 export const shopDataMap: Record<string, ShopData> = shopDataByCampus.ichigaya;
-// updated: 多摩の店舗データ更新（4店舗）
+// updated: shopDataByCampusのexport整理
