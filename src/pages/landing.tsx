@@ -129,4 +129,4 @@ export default function Landing() {
     </main>
   );
 }
-// updated: ещеєе╟егеєе░е┌й`е╕д╬е░еще╟й`е╖ечеє╒{╒√
+// updated: ещеєе╟егеєе░е┌й`е╕д╦╨г╗╒╫╖╝╙
