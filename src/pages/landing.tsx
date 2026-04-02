@@ -129,4 +129,4 @@ export default function Landing() {
     </main>
   );
 }
-// updated: ランディングページに景色写真統合
+// updated: 景色写真のオーバーレイ調整
