@@ -146,4 +146,4 @@ export default function TechPage() {
     </div>
   );
 }
-// updated: テックページにCISロゴ追加
+// updated: テックページのバージョン情報更新
