@@ -21,7 +21,7 @@ const techCategories: {
       { name: "TypeScript", version: "5.8", description: "Type Safety", color: "from-blue-600 to-blue-400" },
       { name: "Tailwind CSS", version: "4.1", description: "Utility-first CSS", color: "from-teal-500 to-cyan-400" },
       { name: "React Router", version: "7.6", description: "Client Routing", color: "from-red-500 to-pink-500" },
-      { name: "Radix UI", version: "—", description: "Accessible Primitives", color: "from-purple-600 to-violet-400" },
+      { name: "Radix UI", version: "�?, description: "Accessible Primitives", color: "from-purple-600 to-violet-400" },
     ],
   },
   {
@@ -43,7 +43,7 @@ const techCategories: {
     items: [
       { name: "Vite", version: "6.3", description: "Build Tool", color: "from-violet-500 to-purple-400" },
       { name: "Vitest", version: "4.1", description: "Unit Testing", color: "from-lime-500 to-green-400" },
-      { name: "PWA", version: "—", description: "Installable App", color: "from-pink-500 to-rose-400" },
+      { name: "PWA", version: "�?, description: "Installable App", color: "from-pink-500 to-rose-400" },
       { name: "ESLint", version: "9.25", description: "Code Quality", color: "from-indigo-400 to-blue-300" },
     ],
   },
@@ -58,7 +58,7 @@ const features = [
   { emoji: "🌐", text: "i18n: Japanese / Chinese / English" },
   { emoji: "📱", text: "PWA: installable, offline-capable" },
   { emoji: "💀", text: "Skeleton loading states" },
-  { emoji: "✨", text: "Particle background & GSAP animations" },
+  { emoji: "�?, text: "Particle background & GSAP animations" },
   { emoji: "🔒", text: "Zod runtime schema validation" },
 ];
 
@@ -133,16 +133,17 @@ export default function TechPage() {
           <div className="flex items-center justify-center gap-3 mb-3">
             <img
               src="/images/hosei-cis-logo.jpg"
-              alt="法政大学 情報科学研究科"
+              alt="法政大学 情報科学研究�?
               width={40}
               height={40}
               className="rounded-md opacity-70"
             />
-            <span>法政大学 情報科学研究科</span>
+            <span>法政大学 情報科学研究�?/span>
           </div>
-          <p>©CODE MATES︎</p>
+          <p>©CODE MATES�?/p>
         </footer>
       </div>
     </div>
   );
 }
+// updated: �ƥå��ک`����CIS����׷��
