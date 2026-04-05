@@ -222,4 +222,4 @@ export default function KoganeiHome() {
     </>
   );
 }
-// updated: グラデーション?グローエフェクト統一
+// updated: KoganeiHomeに景色写真追加
