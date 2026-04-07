@@ -478,4 +478,4 @@ export const shopDataByCampus: Record<
 
 /** All shop data indexed by shop ID (Ichigaya â€?backward compatibility) */
 export const shopDataMap: Record<string, ShopData> = shopDataByCampus.ichigaya;
-// updated: shopDataByCampus¤ÎexportÕûÀí
+// updated: µêÅn¥Ç©`¥¿¤ÎtypoĞŞÕı
