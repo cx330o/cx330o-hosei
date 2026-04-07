@@ -38,4 +38,4 @@ export default function useUserInput() {
 
   return { state, setState }
 }
-// updated: useUserInput¤Î¥­¥ã¥ó¥Ñ¥¹„e¥Ç¥Õ¥©¥ë¥ÈñkÐÞÕý
+// updated: localStorage¤Î¥­¥ã¥ó¥Ñ¥¹ég·Öëx
