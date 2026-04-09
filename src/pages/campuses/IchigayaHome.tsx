@@ -201,4 +201,4 @@ export default function IchigayaHome() {
     </>
   );
 }
-// updated: ¥í¥´¤ò¥Æ¥­¥¹¥È¥¿¥¤¥È¥ë¤Ë‰ä¸ü
+// updated: IchigayaHome¤Î¥ê¥ó¥¯¥Ü¥¿¥ó¸ÄÉÆ
