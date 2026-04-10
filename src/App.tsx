@@ -33,7 +33,7 @@ const TrackPageViews = () => {
 
 const LazyFallback = () => (
   <div className="flex justify-center items-center min-h-screen bg-gray-100 dark:bg-zinc-950 text-black dark:text-white">
-    <p>шкнуБ┐ш╛╝уБ┐ф╕?..</p>
+    <p>шкнуБ┐ш╛╝уБ┐ф╕н...</p>
   </div>
 );
 
@@ -89,4 +89,3 @@ const App = () => {
 };
 
 export default App;
-// updated: ╫ю╜Kе│й`е╔╒√└э

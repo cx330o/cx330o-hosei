@@ -34,11 +34,11 @@ const ShopDetailTemplate = ({ shop }: ShopDetailTemplateProps) => {
           ))}
           <p className="font-semibold text-rose-400 text-lg">割引方法</p>
           <p>{shop.discountMethod}</p>
-          <p className="font-semibold text-rose-400 text-lg">営業日／定休�?/p>
+          <p className="font-semibold text-rose-400 text-lg">営業日／定休日</p>
           {shop.businessHours.map((line, i) => (
             <p key={i}>{line}</p>
           ))}
-          <p className="font-semibold text-rose-400 text-lg">お支払方�?/p>
+          <p className="font-semibold text-rose-400 text-lg">お支払方法</p>
           <p>{shop.paymentMethods}</p>
           <p className="font-semibold text-rose-400 text-lg">アクセス</p>
           <iframe
@@ -63,4 +63,3 @@ const ShopDetailTemplate = ({ shop }: ShopDetailTemplateProps) => {
 };
 
 export default ShopDetailTemplate;
-// updated: ���nԔ����GoogleMap����z��

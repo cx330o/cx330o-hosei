@@ -70,7 +70,7 @@ export interface CampusConfig {
   subtitle: string;
   /** Primary transport mode */
   transportMode: TransportMode;
-  /** Whether direction swap (大学行き/駅行�? is supported */
+  /** Whether direction swap (大学行き/駅行き) is supported */
   hasDirectionSwap: boolean;
   /** Station configs */
   stations: StationConfig[];
@@ -83,4 +83,3 @@ export interface CampusConfig {
   /** Google Analytics tracking ID */
   gaTrackingId: string;
 }
-// updated: CampusConfig��sceneryImagePath׷��

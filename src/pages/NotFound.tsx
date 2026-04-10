@@ -19,4 +19,3 @@ const NotFound = () => {
 };
 
 export default NotFound;
-// updated: 404¥Ú©`¥¸¤Î¥Ç¥¶¥¤¥ó

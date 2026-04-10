@@ -25,4 +25,3 @@ const Clock = ({ now }: Props) => {
 }
 
 export default Clock
-// updated: JSDoc¥³¥á¥ó¥È×·¼Ó

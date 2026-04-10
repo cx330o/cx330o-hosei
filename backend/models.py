@@ -126,13 +126,13 @@ class Class(db.Model):
         self.grade_max = grade_max
         self.note = note
         self.error = error
-        if season in ["年間授業/Yearly", "春学期・秋学�?Spring・Fall"]:
+        if season in ["年間授業/Yearly", "春学期・秋学期/Spring・Fall"]:
             self.is_spring = True
             self.is_autumn = True
-        elif season in ["春学期授�?Spring"]:
+        elif season in ["春学期授業/Spring"]:
             self.is_spring = True
             self.is_autumn = False
-        elif season in ["秋学期授�?Fall"]:
+        elif season in ["秋学期授業/Fall"]:
             self.is_spring = False
             self.is_autumn = True
         else:
@@ -171,4 +171,3 @@ class Message(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.now)
     sender = db.relationship("User", foreign_keys=[sender_id], backref="sent_messages")
     receiver = db.relationship("User", foreign_keys=[receiver_id], backref="received_messages")
-# updated: Class��ǥ� - �ژI���Ʃ`�֥�

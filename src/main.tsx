@@ -8,4 +8,3 @@ createRoot(document.getElementById('root')!).render(
       <App />
   </StrictMode>,
 )
-// updated: ¥¢¥Ã¥×¥°¥ì©`¥Éáá¤Î¥Ó¥ë¥É¥¨¥é©`ÐÞÕý

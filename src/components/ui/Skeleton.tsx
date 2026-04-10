@@ -48,4 +48,3 @@ export const HomeSkeleton = () => (
 );
 
 export default Skeleton;
-// updated: Skeleton¤Î¥¢¥Ë¥á©`¥·¥ç¥óÕ{Õû

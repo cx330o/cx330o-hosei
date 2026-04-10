@@ -45,4 +45,3 @@ const Countdown = ({ now, targetDate, labelBefore, labelAfter }: Props) => {
 };
 
 export default Countdown;
-// updated: 市它件玄母它件及失瓦丟奈扑亦件蜊囡

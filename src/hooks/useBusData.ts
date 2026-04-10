@@ -64,4 +64,3 @@ export function useBusData(campusId?: CampusId): UseBusDataResult {
 }
 
 export default useBusData;
-// updated: strict mode¤Î²Ð¤ê¤ÎÐÍ¥¨¥é©`ÐÞÕý

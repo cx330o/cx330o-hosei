@@ -105,4 +105,3 @@ const CyberBackground = () => {
 };
 
 export default CyberBackground;
-// updated: ¥µ¥¤¥Ð©`±³¾°¤Î¥Í¥ª¥ó¥é¥¤¥ó

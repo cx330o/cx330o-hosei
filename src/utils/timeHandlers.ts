@@ -17,4 +17,3 @@ export {
 export { findNextBuses, getSpecialDateConfig } from "./busUtils"
 
 export { findNextTrains } from "./trainUtils"
-// updated: JSDocÕû‚ä

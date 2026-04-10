@@ -30,4 +30,3 @@ const StationButton = React.forwardRef<HTMLButtonElement, StationButtonProps>(({
 StationButton.displayName = 'StationButton';
 
 export default StationButton;
-// updated: ñk¥Ü¥¿¥ó¤Î¥¢¥¯¥Æ¥£¥Ö×´‘B

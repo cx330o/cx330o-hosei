@@ -21,4 +21,3 @@ const StoreCard = ({storeName,storeImage,storeDescription,url,children}:StoreCar
 }
 
 export default StoreCard
-// updated: µêÅn¥«©`¥É¤Î¥Û¥Ð©`¥¨¥Õ¥§¥¯¥È
