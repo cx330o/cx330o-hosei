@@ -23,24 +23,35 @@
 
 ## スクリーンショット
 
-<!-- 以下の画像パスにスクリーンショットを配置してください -->
+<!-- スクリーンショット -->
 
 ### ランディングページ
 <p align="center">
-  <img src="docs/images/landing.png" alt="ランディングページ" width="800" />
+  <img src="docs/images/landing.webp" alt="ランディングページ" width="800" />
 </p>
 
 ### キャンパス別ホームページ
 
 | 市ヶ谷 (いちっぷ) 🌸 | 小金井 (こがっぷ) ⚡ | 多摩 (たまっぷ) 🌿 |
 |:---:|:---:|:---:|
-| <img src="docs/images/ichigaya.png" width="250" /> | <img src="docs/images/koganei.png" width="250" /> | <img src="docs/images/tama.png" width="250" /> |
+| <img src="docs/images/ichigaya.webp" width="250" /> | <img src="docs/images/koganei.webp" width="250" /> | <img src="docs/images/tama.webp" width="250" /> |
 
 ### 提携店舗・SNS・AI
 
 | 提携店舗ページ | SNSホーム | AIチャットボット |
 |:---:|:---:|:---:|
-| <img src="docs/images/discount.png" width="250" /> | <img src="docs/images/sns.png" width="250" /> | <img src="docs/images/chatbot.png" width="250" /> |
+| <img src="docs/images/discount.webp" width="250" /> | <img src="docs/images/SNSホーム 登录页.webp" width="250" /> | <img src="docs/images/AIチャットボット画面.webp" width="250" /> |
+
+### SNS 投稿詳細 (AI要約・翻訳)
+<p align="center">
+  <img src="docs/images/SNS 评论页.webp" alt="SNS投稿詳細" width="400" />
+</p>
+
+### CODE MATES (開発チーム)
+
+| Instagram | X (Twitter) |
+|:---:|:---:|
+| <img src="docs/images/法政大学 CODE MATES 编程组织 Insta官方账号.webp" width="350" /> | <img src="docs/images/法政大学 CODE MATES 编程组织 X 官方账号.webp" width="350" /> |
 
 ---
 
